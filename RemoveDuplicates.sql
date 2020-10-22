@@ -1,7 +1,7 @@
 /****** Script for SelectTopNRows command from SSMS  ******/
 
-DELETE FROM [HRSD].[dbo].[Db232Approvers] WHERE id NOT IN 
+DELETE FROM *Table Name* WHERE id NOT IN 
 (
-SELECT MAX(id) AS MaxRecordID FROM  [HRSD].[dbo].[Db232Approvers]
-        GROUP BY DTEGroup, Community, RPL, Leads
+SELECT MAX(id) AS MaxRecordID FROM  *Table Name*
+        GROUP BY *Duplicated attributes*
 )
